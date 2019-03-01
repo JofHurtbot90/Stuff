@@ -12,7 +12,7 @@ todoRouter('/', (req, res)=>{
     });
 });
 
-todoRouter.get('/', (req, res, next){
+todoRouter.get('/', (req, res, next)=>{
     Todo.find({user: req.user._id}, (err, todos)=>{
         if (err) {
             res.status(500);
