@@ -2,7 +2,7 @@ const express = require('express');
 const todoRouter = express.Router();
 const Todo = require('../models/todo');
 
-todoRouter('/', (req, res)=>{
+todoRouter('/', (req, res, next)=>{
     Todo.find((err, todos)=>{
         if (err){
             res.status(500);
