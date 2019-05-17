@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Messing with Segments
+    </ion-title>
+    <ion-segment (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="camera">
+      <ion-icon name="camera"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="bookmark">
+      <ion-icon name="bookmark"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <ion-segment scrollable>
+  <ion-segment-button>
+    <ion-icon name="home"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button checked>
+    <ion-icon name="heart"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button>
+    <ion-icon name="pin"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button>
+    <ion-icon name="star"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button>
+    <ion-icon name="call"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button>
+    <ion-icon name="globe"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button>
+    <ion-icon name="basket"></ion-icon>
+  </ion-segment-button>
+</ion-segment>
+
+<ion-segment (ionChange)="segmentChanged($event)" color="secondary">
+  <ion-segment-button value="standard">
+    <ion-label>Standard</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="hybrid">
+    <ion-label>Hybrid</ion-label>
+  </ion-segment-button>
+  <ion-segment-button value="sat">
+    <ion-label>Satellite</ion-label>
+  </ion-segment-button>
+</ion-segment>
+
+  <p>So after going through the idea of segments, using this component will allow you to 
+  click on the icon or button and it will become highlighted until you make a command for it 
+  to go to the selection. A very nice UI for a clean app.</p>
+  
+  </div>
+</ion-content>
