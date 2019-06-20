@@ -77,3 +77,23 @@ if user_choice == 1:
     tx_amount = get_transaction_value()
 
     add_value(tx_amount, get_last_value())
+
+elif user_choice == 2:
+  
+  print_block()
+
+elif user_choice == 3:
+  
+  if len(blockchain) >= 1:
+
+      blockchain[0] = 2
+
+else:
+ 
+    break
+
+if not verify_chain():
+  
+  print('Blockchain manipulated')
+  
+     break
