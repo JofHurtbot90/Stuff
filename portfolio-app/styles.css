@@ -1,0 +1,83 @@
+.h1{
+position: absolute;
+width: 303px;
+height: 152px;
+left: 127px;
+top: 215px;
+
+font-family: Comfortaa;
+font-style: normal;
+font-weight: normal;
+font-size: 68px;
+line-height: 76px;
+
+color: #000000;
+
+}
+
+.p{
+position: absolute;
+width: 791px;
+height: 240px;
+left: 127px;
+top: 448px;
+
+font-family: Comfortaa;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 40px;
+
+color: #6D6D6D;
+
+}
+
+.h2 .Skills{
+position: absolute;
+width: 114px;
+height: 47px;
+left: 120px;
+top: 783px;
+
+font-family: Comfortaa;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 47px;
+
+color: #000000;
+
+}
+
+.h2 .Projects{
+position: absolute;
+width: 174px;
+height: 47px;
+left: 121px;
+top: 1226px;
+
+font-family: Comfortaa;
+font-style: normal;
+font-weight: bold;
+font-size: 42px;
+line-height: 47px;
+color: #000000;
+
+}
+
+.ol{
+position: absolute;
+width: 166px;
+height: 192px;
+left: 162px;
+top: 893px;
+
+font-family: Comfortaa;
+font-style: normal;
+font-weight: normal;
+font-size: 30px;
+line-height: 33px;
+
+color: #6D6D6D;
+    
+}

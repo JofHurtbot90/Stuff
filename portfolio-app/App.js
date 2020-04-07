@@ -1,45 +1,41 @@
-import React from 'react'
-import Portfolio from './Portfolio.js'
+import React from 'react';
+import styles from './styles.css';
 
 
 
 function App() {
-    return (
-        <main>
-         <Portfolio>
-         
-            <h5>Home<h5/>
-            <h5>Projects<h5/>
-            <h5>About<h5/>
-            <h5>Contact<h5/>
-         
-         </Portfolio>
-         
-         <Portfolio>
-         
-            <h1>Joshua Hurtado</h1>
-            
-         </Portfolio>
-         
-         <p>I am a Javascript|Backend Developer that
-         builds from the bottom up. I start on the backend
-          that includes authentication, servers, RestAPI's and
-          middleware then I work my way to the frontend.</p>
-        
-        <Portfolio>
-        
-            <h2>Skills</h2>
-            
-            
-        </Portfolio>
-        
-        <Portfolio>
-        
-            <h2>Projects</h2>
-        
-        </Portfolio>
-        
-        </main>
+   
+   return (
+
+    <div>
+
+      <h1>Joshua Hurtado</h1>
+
+    <p> 
+      I am a Javascript Developer and Backend Developer that builds from the bottom up. 
+      I start from the backend that include authentication, servers, hosts, RestAPI's and middleware 
+      then work my way to the frontend. </p>
+
+      <h2>Skills</h2>
+
+        <ol>Javascript</ol>
+        <ol>React</ol>
+        <ol>MongoDB</ol>
+        <ol>Node.js</ol>
+        <ol>Mongoose</ol>
+        <ol>Express</ol>
+        <ol>Github</ol>
+        <ol>Git</ol>
+        <ol>OAuth</ol>
+        <ol>Token Authentication</ol>
+        <ol>HTML</ol>
+        <ol>CSS</ol>
+
+      <h2>Projects</h2>
+      
+      </div>
+    
+  )
 }
 
 export default App;
