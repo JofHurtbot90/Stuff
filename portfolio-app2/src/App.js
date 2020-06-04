@@ -21,22 +21,34 @@ function App() {
 
       <h2><span class='blue-text text-darken-2'> Skills </span></h2>
 
-        <ul class='collection'>
+        <table>
 
-        <li class='collection-item'> Javascript </li> 
-        <li class='collection-item'> React </li > 
-        <li class='collection-item'> MongoDB </li> 
-        <li class='collection-item'> Node.js </li> 
-        <li class='collection-item'> Mongoose </li> 
-        <li class='collection-item'> Express </li> 
-        <li class='collection-item'> Github </li> 
-        <li class='collection-item'> Git </li> 
-        <li class='collection-item'> OAuth </li> 
-        <li class='collection-item'> Token Authentication </li> 
-        <li class='collection-item'> HTML </li> 
-        <li class='collection-item'> CSS </li> 
+          <tbody>
+          
+            <tr>
+              <td>Javascript</td>
+              <td>React</td>
+              <td>MongoDB</td>
+            </tr>
+            <tr>
+              <td>Node.js</td>
+              <td>Mongoose</td>
+              <td>Express</td>
+            </tr>
+            <tr>
+              <td>Github</td>
+              <td>Git</td>
+              <td>OAuthentication</td>
+            </tr>
+            <tr>
+              <td>Token Authentication</td>
+              <td>HTML</td>
+              <td>CSS</td>
+            </tr>
+
+          </tbody>
         
-        </ul>
+        </table>
 
         <h2><span class='blue-text text-darken-2'> Projects </span></h2>
 
