@@ -8,7 +8,8 @@ class LoginForm extends Component {
         super();
         this.state = {
             username: "",
-            password: ""
+            password: "",
+            errorMessage: ''
         }
     }
 
@@ -22,14 +23,18 @@ class LoginForm extends Component {
     clearInputs = () => {
         this.setState({
             username: "",
-            password: ""
+            password: "",
+            errorMessage: ''
         })
     }
 
     handleSubmit = (e) => {
         e.preventDefault();
         this.props.login(this.state)
-        .then(() => this.props.history,push('/todos'))
+        .then(() => this.clearInputs())
+        .catch(err => {
+            this.setState({errorMessage: err.data})
+        })
     }
 
     render() {
@@ -51,6 +56,10 @@ class LoginForm extends Component {
                         placeholder="password"/>
                     <button type="submit">Submit</button>
                 </form>
+                {
+                    this.state.errorMessage &&
+                    <p style={{color: 'red'}}>{this.state.errorMessage}</p>
+                }
             </div>
         )
     }

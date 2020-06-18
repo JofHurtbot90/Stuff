@@ -6,6 +6,9 @@ import reducer from './reducer';
 import { usePersistentContext, userPersistedReducer } from './usePersist';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
+import ProtectedRoute from './Auth/ProtectedRoute';
+
+<ProtectedRoute path='/todos' component={TodoList}/>
 
 import App from './App';
 
