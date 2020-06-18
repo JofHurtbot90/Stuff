@@ -1,6 +1,7 @@
 import React, {useState, useRef } from 'react';
-
 import React, { Component } from 'react';
+import { withContext } from '../AppContext';
+
 
 class LoginForm extends Component {
     constructor() {
@@ -27,8 +28,8 @@ class LoginForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        alert(JSON.stringify(this.state));
-        this.clearInputs();
+        this.props.login(this.state)
+        .then(() => this.props.history,push('/todos'))
     }
 
     render() {
@@ -55,4 +56,4 @@ class LoginForm extends Component {
     }
 }
 
-export default LoginForm;
+export default withContext(LoginForm);

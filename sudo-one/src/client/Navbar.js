@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { withContext } from './AppContext';
 
 function Navbar() {
     return (
@@ -14,10 +15,10 @@ function Navbar() {
                 <Link to="/todos">Todos</Link>
             </div>
             <div className="nav-link">
-                <button>Logout</button>
+                <button onClick={props.logout}>Logout</button>
             </div>
         </nav>
     )
 }
 
-export default Navbar;
+export default withContext(Navbar);
