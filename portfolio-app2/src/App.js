@@ -13,6 +13,8 @@ function App() {
 
     <h1><span class='blue-text text-darken-2'> Joshua Hurtado </span></h1>
 
+    
+
       <p class='flow-text'>
         I am a Javascript Developer and Backend Developer that builds from the bottom up.
       I start from the backend that include authentication, servers, hosts, RestAPIs and middleware
