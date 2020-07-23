@@ -17,12 +17,12 @@ import App from './App';
 
 function App() {
     
-   // const globalStore = usePersistedContext(useContext(AppContext), 'state');
+    const globalStore = usePersistedContext(useContext(AppContext), 'state');
 
-   // const [state, dispatch] = usePersistedReducer(
-    //    useReducer(reducer, globalStore),
-     //   'state'
-    //);
+    const [state, dispatch] = usePersistedReducer(
+       useReducer(reducer, globalStore),
+        'state'
+    );
 
     return (
         <BrowserRouter>

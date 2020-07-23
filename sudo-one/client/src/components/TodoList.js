@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import Store from "../context";
-import { TodoReader } from "./TodoHeader";
+import { TodoHeader } from "./TodoHeader";
 
 function TodoList() {
   const { state, dispatch } = useContext(Store);
