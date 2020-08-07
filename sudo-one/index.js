@@ -2,14 +2,14 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
+//const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 5000;
 require('dotenv').config();
 const expressJwt = require('express-jwt');
 
 app.use(morgan('dev'));
-app.use(bodyParser.json());
-app.use('/api', expressJwt({ secret: process.env.SECRET }))
+app.use(express.json());
+app.use('/api', expressJwt({ secret: process.env.SECRET, algorithms: ['HS256'] }));
 
 mongoose.set('useCreateIndex', true);
 mongoose.connect('mongodb://localhost:27017/sudo-todo',

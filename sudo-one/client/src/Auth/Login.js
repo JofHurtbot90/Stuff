@@ -1,4 +1,3 @@
-import React, {useState, useRef } from 'react';
 import React, { Component } from 'react';
 import { withContext } from '../AppContext';
 
