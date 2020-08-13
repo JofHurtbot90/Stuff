@@ -5,8 +5,8 @@ export function usePersistedContext(context, key = 'state') {
   return persistedContext ? JSON.parse(persistedContext) : context;
 }
 
-export function usePersistedReducer ([state, dispatch], key = 'state') {
-  useEffect(() => localStorage.setItem(key, JSON.stringify(state)), [state]);
+export function usePersistedReducer ([state, dispatch] = 'state') {
+  useEffect((key) => localStorage.setItem(key, JSON.stringify(state)), [state]);
   return [state, dispatch];
 }
 
