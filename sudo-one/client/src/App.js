@@ -7,8 +7,8 @@ import { usePersistedContext, usePersistedReducer } from './usePersist';
 import Signup from './Auth/Signup.js'
 import Login from "./Auth/Login.js"
 import { TodoList } from './components/TodoList';
-//import TodoForm from './components/TodoForm';
-import ProtectedRoute from './Auth/ProtectedRoute';
+// import TodoForm from './components/TodoForm';
+//import ProtectedRoute from './Auth/ProtectedRoute';
 
 
 
@@ -24,6 +24,8 @@ import ProtectedRoute from './Auth/ProtectedRoute';
                 <Switch>
                     <Route exact path="/" component={Signup} />
                     <Route path="/login" component={Login}/>
+                    <Route path=''
+                    
                     <ProtectedRoute path = '/todos'
                         component = {
                             TodoList

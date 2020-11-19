@@ -7,5 +7,15 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.1",
     "morgan": "^1.10.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "music",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
