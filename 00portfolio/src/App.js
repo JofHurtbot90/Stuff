@@ -16,7 +16,7 @@ import {
 
 function App() {
   const grid = useGridState();
-  const disclosure = useDisclosureState({ visible: true});
+  const disclosure = useDisclosureState();
   return (
 
     <Provider>
@@ -24,13 +24,13 @@ function App() {
      <h1 style={{
        color: '#1985A1',
        fontFamily: 'Khula',
-       fontSize: '55px'
+       fontSize: '100px'
      }}>Joshua Hurtado</h1>
 
      <p style={{
        color: '#46494C',
        fontFamily: 'Nobile',
-       fontSize: '20px'
+       fontSize: '65px'
       }}>I am a Javascript Developer and Backend Developer that builds from the bottom up. 
      I start from the backend that include authentication, servers, hosts, 
      RestAPIs and middleware then work my way to the frontend.</p>
@@ -38,12 +38,14 @@ function App() {
     <h2 style={{
       color: '#1985A1',
       fontFamily: 'Khula',
-      fontSize: '35px'
+      fontSize: '55px'
     }}>Skills</h2>
     <Grid {...grid} aria-label='My grid' >
       <GridRow {...grid} style={{
        color: '#46494C',
        fontFamily: 'Nobile',
+       display: 'grid',
+       fontSize: '25px'
       
       }}>
         <GridCell {...grid}>Javascript</GridCell>
@@ -53,7 +55,9 @@ function App() {
       </GridRow>
       <GridRow {...grid} style={{
        color: '#46494C',
-       fontFamily: 'Nobile'
+       fontFamily: 'Nobile',
+       display: 'grid',
+       fontSize: '25px'
       }}>
         <GridCell {...grid}>Git</GridCell>
         <GridCell {...grid}>GitHub</GridCell>
@@ -62,7 +66,9 @@ function App() {
       </GridRow>
       <GridRow {...grid} style={{
        color: '#46494C',
-       fontFamily: 'Nobile'
+       fontFamily: 'Nobile',
+       display: 'grid',
+       fontSize: '25px'
       }}>
         <GridCell {...grid}>Express</GridCell>
         <GridCell {...grid}>Mongoose</GridCell>
@@ -74,24 +80,34 @@ function App() {
     <h2 style={{
       color: '#1985A1',
        fontFamily: 'Khula',
-       fontSize: '35px'
+       fontSize: '55px'
     }}>Projects</h2>
       <p style={{
        color: '#46494C',
        fontFamily: 'Nobile',
-       fontSize: '20px'
-      }}><a href='firehouse-app.web.app' target='__blank'>Firehouse App</a></p>
+       fontSize: '25px'
+      }}><a href='http://firehouse-app.web.app' target='__blank'>Firehouse App</a></p>
       <p style={{
        color: '#46494C',
        fontFamily: 'Nobile',
-       fontSize: '20px'
+       fontSize: '25px'
       }}>ToDo App</p>
       <>
       <Disclosure {...disclosure}>Contact</Disclosure>
       <DisclosureContent {...disclosure}>
-      josh.hurtado1990@gmail.com
-      www.github.com/JofHurtbot
-      www.linkedin.com/JofHurtbot
+      {(props) => disclosure.visible && <div {...props} style={{
+       color: '#46494C',
+       fontFamily: 'Nobile',
+       fontSize: '20px',
+       display: 'grid'
+      }}>
+        josh.hurtado1990@gmail.com
+        <br/>
+        <a href='http://www.github.com/jofhurtbot90' target='__blank'>GitHub</a>
+        <br/>
+         <a href='https://www.linkedin.com/in/jofhurtbot90/' target='__blank'>LinkedIn</a>
+      </div>} 
+      
       </DisclosureContent>
       </>
    </Role> 
