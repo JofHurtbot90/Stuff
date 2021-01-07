@@ -31,7 +31,7 @@ function App() {
        color: '#46494C',
        fontFamily: 'Nobile',
        fontSize: '65px'
-      }}>I am a Javascript Developer and Backend Developer that builds from the bottom up. 
+      }}>I am a React Developer that builds from the bottom up. 
      I start from the backend that include authentication, servers, hosts, 
      RestAPIs and middleware then work my way to the frontend.</p>
 
@@ -91,7 +91,7 @@ function App() {
        color: '#46494C',
        fontFamily: 'Nobile',
        fontSize: '25px'
-      }}>ToDo App</p>
+      }}><a href='http://todo-app.vercel.app' target='__blank'>ToDo App</a></p>
       <>
       <Disclosure {...disclosure}>Contact</Disclosure>
       <DisclosureContent {...disclosure}>
@@ -101,7 +101,7 @@ function App() {
        fontSize: '20px',
        display: 'grid'
       }}>
-        josh.hurtado1990@gmail.com
+        josh.hurtado141@gmail.com
         <br/>
         <a href='http://www.github.com/jofhurtbot90' target='__blank'>GitHub</a>
         <br/>
