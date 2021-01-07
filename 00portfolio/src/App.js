@@ -91,7 +91,7 @@ function App() {
        color: '#46494C',
        fontFamily: 'Nobile',
        fontSize: '25px'
-      }}><a href='http://todo-app.vercel.app' target='__blank'>ToDo App</a></p>
+      }}><a href='http://todo-app-tau-ashen.vercel.app' target='__blank'>ToDo App</a></p>
       <>
       <Disclosure {...disclosure}>Contact</Disclosure>
       <DisclosureContent {...disclosure}>
