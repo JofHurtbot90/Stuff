@@ -30,7 +30,13 @@ function App() {
      <p style={{
        color: '#46494C',
        fontFamily: 'Nobile',
-       fontSize: '65px'
+       fontSize: '65px',
+       background: 'rgba( 255, 255, 255, 0.00 )',
+        boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
+        backdropFilter: 'blur( 5.5px )',
+        webkitBackdropFilter:' blur( 5.5px )',
+        borderRadius: '10px',
+        border:' 1px solid rgba( 255, 255, 255, 0.18 )'
       }}>I am a React Developer that builds from the bottom up. 
      I start from the backend that include authentication, servers, hosts, 
      RestAPIs and middleware then work my way to the frontend.</p>
@@ -86,7 +92,7 @@ function App() {
        color: '#46494C',
        fontFamily: 'Nobile',
        fontSize: '25px'
-      }}><a href='http://firehouse-app.web.app' target='__blank'>Firehouse App</a></p>
+      }}><a href='http://firehouse-app.web.app' target='__blank' img='hotzone.png'>Hotzone</a></p>
       <p style={{
        color: '#46494C',
        fontFamily: 'Nobile',
