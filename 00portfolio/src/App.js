@@ -100,20 +100,20 @@ function App() {
        fontFamily: 'Nobile',
        fontSize: '25px',
        paddingLeft: '35px'
-      }}><a href='http://firehouse-app.web.app' target='__blank' img='hotzone.png'>Hotzone</a></p>
+      }}><a href='http://firehouse-app.web.app' target='__blank'>Hotzone</a></p>
       <p style={{
        color: '#46494C',
        fontFamily: 'Nobile',
        fontSize: '25px',
        paddingLeft: '35px'
-      }}><a href='http://todo-app-tau-ashen.vercel.app' target='__blank'>ToDo App</a></p>
+      }}><a href='http://todo-app-tau-ashen.vercel.app' target='__blank'>Hotzone App</a></p>
       <>
       <Disclosure {...disclosure}>Contact</Disclosure>
       <DisclosureContent {...disclosure}>
       {(props) => disclosure.visible && <div {...props} style={{
        color: '#46494C',
        fontFamily: 'Nobile',
-       fontSize: '20px',
+       fontSize: '45px',
        display: 'grid',
        paddingLeft: '35px'
       }}>
