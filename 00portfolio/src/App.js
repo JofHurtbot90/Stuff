@@ -24,7 +24,8 @@ function App() {
      <h1 style={{
        color: '#1985A1',
        fontFamily: 'Khula',
-       fontSize: '100px'
+       fontSize: '100px',
+       paddingLeft: '35px'
      }}>Joshua Hurtado</h1>
 
      <p style={{
@@ -36,7 +37,8 @@ function App() {
         backdropFilter: 'blur( 5.5px )',
         webkitBackdropFilter:' blur( 5.5px )',
         borderRadius: '10px',
-        border:' 1px solid rgba( 255, 255, 255, 0.18 )'
+        border:' 1px solid rgba( 255, 255, 255, 0.18 )',
+        paddingLeft: '35px'
       }}>I am a React Developer that builds from the bottom up. 
      I start from the backend that include authentication, servers, hosts, 
      RestAPIs and middleware then work my way to the frontend.</p>
@@ -44,14 +46,16 @@ function App() {
     <h2 style={{
       color: '#1985A1',
       fontFamily: 'Khula',
-      fontSize: '55px'
+      fontSize: '55px',
+      paddingLeft: '35px'
     }}>Skills</h2>
     <Grid {...grid} aria-label='My grid' >
       <GridRow {...grid} style={{
        color: '#46494C',
        fontFamily: 'Nobile',
        display: 'grid',
-       fontSize: '25px'
+       fontSize: '25px',
+       paddingLeft: '35px'
       
       }}>
         <GridCell {...grid}>Javascript</GridCell>
@@ -63,7 +67,8 @@ function App() {
        color: '#46494C',
        fontFamily: 'Nobile',
        display: 'grid',
-       fontSize: '25px'
+       fontSize: '25px',
+       paddingLeft: '35px'
       }}>
         <GridCell {...grid}>Git</GridCell>
         <GridCell {...grid}>GitHub</GridCell>
@@ -74,7 +79,8 @@ function App() {
        color: '#46494C',
        fontFamily: 'Nobile',
        display: 'grid',
-       fontSize: '25px'
+       fontSize: '25px',
+       paddingLeft: '35px'
       }}>
         <GridCell {...grid}>Express</GridCell>
         <GridCell {...grid}>Mongoose</GridCell>
@@ -86,17 +92,20 @@ function App() {
     <h2 style={{
       color: '#1985A1',
        fontFamily: 'Khula',
-       fontSize: '55px'
+       fontSize: '55px',
+       paddingLeft: '35px'
     }}>Projects</h2>
       <p style={{
        color: '#46494C',
        fontFamily: 'Nobile',
-       fontSize: '25px'
+       fontSize: '25px',
+       paddingLeft: '35px'
       }}><a href='http://firehouse-app.web.app' target='__blank' img='hotzone.png'>Hotzone</a></p>
       <p style={{
        color: '#46494C',
        fontFamily: 'Nobile',
-       fontSize: '25px'
+       fontSize: '25px',
+       paddingLeft: '35px'
       }}><a href='http://todo-app-tau-ashen.vercel.app' target='__blank'>ToDo App</a></p>
       <>
       <Disclosure {...disclosure}>Contact</Disclosure>
@@ -105,13 +114,14 @@ function App() {
        color: '#46494C',
        fontFamily: 'Nobile',
        fontSize: '20px',
-       display: 'grid'
+       display: 'grid',
+       paddingLeft: '35px'
       }}>
         josh.hurtado141@gmail.com
         <br/>
-        <a href='http://www.github.com/jofhurtbot90' target='__blank'>GitHub</a>
+        <a href='http://www.github.com/jofhurtbot90' target='__blank'><i class="fab fa-github"></i></a>
         <br/>
-         <a href='https://www.linkedin.com/in/jofhurtbot90/' target='__blank'>LinkedIn</a>
+         <a href='https://www.linkedin.com/in/jofhurtbot90/' target='__blank'><i class="fab fa-linkedin"></i></a>
       </div>} 
       
       </DisclosureContent>
